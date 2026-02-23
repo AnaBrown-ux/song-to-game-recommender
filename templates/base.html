@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>
+        Find Your New Favorite Videogame!
+    </title>
+</head>
+<body>
+    <header>
+        <h1>Find Your New Favorite Videogame!</h1>
+    </header>
+    <div class="square">
+    {% block content %}
+
+    {% endblock %}
+    </div>
+</body>
+
+<footer>
+    Genre data from <a href="https://developer.spotify.com/documentation/web-api"> Spotify </a>
+</footer>
+</html>
